@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/miEstilo1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>TechAcademy - Inscripción</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>TechAcademy</h1>
+        </div>
+        <nav class="navPrincipal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="mentoria.html">Mentoría</a></li>
+                <li>
+                    <a href="inscribirse.html" id="btn_destacado">
+                        Inscribirse
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedorPrincipal">
+        <section class="seccionFormulario">
+            <h2>Inscripción al curso</h2>
+            <p>
+                Completa el siguiente formulario para registrarte
+                en uno de nuestros cursos.
+            </p>
+            <form action="#" method="GET">
+                <div class="campo">
+                    <label for="nombre">
+                        Nombre completo:
+                    </label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribe tu nombre"
+                        required>
+                </div>
+                <div class="campo">
+                    <label for="correo">
+                        Correo electrónico:
+                    </label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="ejemplo@correo.com"
+                        required>
+                </div>
+                <div class="campo">
+                    <label for="telefono">
+                        Teléfono:
+                    </label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="10 dígitos"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="curso">
+                        Selecciona un curso:
+                    </label>
+                    <select
+                        id="curso"
+                        name="curso"
+                        required>
+                        <option value="">
+                        Selecciona un curso
+                        </option>
+                        <option value="ciberseguridad">
+                            Fundamentos de la ciberseguridad
+                        </option>
+                        <option value="ia">
+                            Introducción a la Inteligencia Artificial
+                        </option>
+                        <option value="soporte">
+                            Fundamentos del soporte técnico
+                        </option>
+                        <option value="datos">
+                            Fundamentos: Datos, en todas partes
+                        </option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="nivel">
+                        Nivel:
+                    </label>
+                    <select
+                        id="nivel"
+                        name="nivel"
+                        required>
+                        <option value="">
+                        Selecciona tu nivel
+                        </option>
+                        <option value="principiante">
+                            Principiante
+                        </option>
+                        <option value="intermedio">
+                            Intermedio
+                        </option>
+                        <option value="avanzado">
+                            Avanzado
+                        </option>
+                    </select>
+                </div>
+
+                <button type="submit" class="botonEnviar">
+                    Enviar inscripción
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; 2026 TechAcademy | Todos los derechos reservados
+        </p>
+    </footer>
+</body>
+</html>
